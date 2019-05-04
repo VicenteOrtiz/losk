@@ -1420,3 +1420,9 @@ h1, h2, h3, h4, h5,
 .custom-pagination span {
   background: #e6e6e6;
   color: #000; }
+
+.tecnology-image {
+  width: 220px;
+  height: 220px;
+  margin: 2.5% 1.5% 2.5% 1.5%;
+}
