@@ -1,0 +1,24 @@
+{
+  "name": "Progressio-web",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "start": "open http://localhost:8080 && node server.js"
+  },
+  "description": "plantilla",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VicenteOrtiz/losk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VicenteOrtiz/losk/issues"
+  },
+  "homepage": "https://github.com/VicenteOrtiz/losk#readme"
+}
