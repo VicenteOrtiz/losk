@@ -5,7 +5,7 @@
     "express": "^4.16.4"
   },
   "scripts": {
-    "start": "open http://localhost:8080 && node server.js"
+    "start": "open http://localhost:3000 && node server.js"
   },
   "description": "plantilla",
   "main": "server.js",
