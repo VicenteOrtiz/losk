@@ -7,7 +7,7 @@
     
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="author" content="Free-Template.co" />
+    <meta name="author" content="Progressio SpA" />
 
     <!-- 
     //////////////////////////////////////////////////////
@@ -60,14 +60,14 @@
       <div class="container">
         <div class="row align-items-center">
           
-          <div class="col-11 col-xl-2 site-logo">
-            <img src="images/progressioblanco.png">
+          <div class="col-11 col-xl-2 site-logo" style="margin-top: 15px;">
+            <img src="images/progressioblanco.png" id="enterpriseLogo">
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li><a href="#section-home" class="nav-link">Home</a></li>
+                <li><a href="#section-home" class="nav-link">Inicio</a></li>
                 <li class="has-children">
                   <a href="#section-about" class="nav-link">Nosotros</a>
                   <ul class="dropdown">
@@ -103,7 +103,6 @@
 
             <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">Transformamos sueños en realidad</h1>
             <p class="mb-5" data-aos="fade-up" data-aos-delay="100">Agilidad, Elegancia y Desarrollo</p>
-            <p data-aos="fade-up" data-aos-delay="200"><a href="https://free-template.co" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p>
 
           </div>
         </div>
@@ -341,21 +340,19 @@
       </div>
     </div>
 
-    
-
     <div class="site-section block-13" id="section-tecnologies">
 
       <div class="container">
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center mb-5" data-aos="fade-up">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="mb-0 text-primary">Tecnologías</h2>
+            <h2 class="mb-0 text-primary" >Tecnologías</h2>
           </div>
         </div>
       </div>
 
       <div class="container">
         <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center" data-aos="fade-up">
             <img src="images/logoVueJs.png" class="tecnology-image">
             <img src="images/logoDocker.png" class="tecnology-image">
             <img src="images/logoSpring.png" class="tecnology-image">
@@ -533,16 +530,16 @@
               </div>
               
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <h2 class="footer-heading mb-4">Accesos Rápidos</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#section-about">Nosotros</a></li>
+                  <li><a href="#section-services">Servicios</a></li>
+                  <li><a href="#section-how-it-works">Cómo funciona</a></li>
+                  <li><a href="#section-contact">Contacto</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <h2 class="footer-heading mb-4">Síguenos</h2>
                 <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
@@ -566,7 +563,7 @@
           <div class="col-md-12">
             <div class="border-top pt-5">
               <p>
-              <small class="block">&copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved. <br> Designed &amp; Developed by <a href="https://www.progressio.cl/" target="_blank">Progressio SpA</a></small> 
+              <small class="block">&copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved. <br> Developed by <a href="https://www.progressio.cl/" target="_blank">Progressio SpA</a></small> 
               </p>
             </div>
           </div>
@@ -590,6 +587,20 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+    var lastScrollTop = 0;
+    window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+       var st = window.pageYOffset || document.documentElement.scrollTop;
+       if(st >= 350){
+        document.getElementById("enterpriseLogo").src = "images/progressioNegro.png";
+       }
+       if(st <= 349){
+        document.getElementById("enterpriseLogo").src = "images/progressioblanco.png";
+       }
+       lastScrollTop = st <= 0 ? 0 : st;
+    }, false);
+  </script>
     
   </body>
 </html>
