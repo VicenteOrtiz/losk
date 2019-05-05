@@ -5,11 +5,14 @@
     "express": "^4.16.4"
   },
   "scripts": {
-    "start": "open http://localhost:3000 && node server.js"
+    "start": "nodemon server.js -e html, css, js"
   },
   "description": "plantilla",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.0",
+    "reload": "^3.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VicenteOrtiz/losk.git"
