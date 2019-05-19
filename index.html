@@ -69,7 +69,7 @@
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-2 site-logo" style="margin-top: 15px;">
-            <img src="images/progressioblanco.png" id="enterpriseLogo" alt="logo Progressio">
+            <img src="images/progressioblanco.png" id="enterpriseLogo" alt="logo Progressio" class="img-fluid">
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -555,10 +555,10 @@
     window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
        var st = window.pageYOffset || document.documentElement.scrollTop;
        if(st >= 350){
-        document.getElementById("enterpriseLogo").src = "images/progressioGris.png";
+        document.getElementById("enterpriseLogo").src = "images/logoProgressioNaranjo.png";
        }
        if(st <= 349){
-        document.getElementById("enterpriseLogo").src = "images/progressioblanco.png";
+        document.getElementById("enterpriseLogo").src = "images/logoProgressioColorBlanco.png";
        }
        lastScrollTop = st <= 0 ? 0 : st;
     }, false);
