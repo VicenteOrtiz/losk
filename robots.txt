@@ -1,8 +1,9 @@
-Sitemap: http://www.progressio.cl/sitemap.xml
 User-agent: *
 Dissallow: /*
 Allow: /index.html
 Allow: /css
 Allow: /images
 Allow: /js
+
+Sitemap: http://www.progressio.cl/sitemap.xml
 
